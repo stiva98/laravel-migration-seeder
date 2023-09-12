@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('page-title', 'Homepage')
+@section('page-title', 'Tabella Treni')
 
 
 @section('main-content')
