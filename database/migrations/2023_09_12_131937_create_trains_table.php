@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('agency', 64);
             $table->string('departure_station', 64);
             $table->string('arrival_station', 64);
-            $table->time('departure_time', 4);
-            $table->time('arrival_time', 4);
+            $table->time('departure_time');
+            $table->time('arrival_time');
             $table->unsignedTinyInteger('carriage_number');
             $table->boolean('in_time')->default(true);
             $table->boolean('delete')->default(false);

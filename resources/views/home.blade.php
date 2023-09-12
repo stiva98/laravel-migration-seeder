@@ -28,6 +28,7 @@
             <li>
                 Nr. Carrozza: {{ $train->carriage_number}}
             </li>
+            @if(!$train->delete)
             <li>
                 In orario: 
                 @if ($train->in_time == 1)
@@ -36,6 +37,7 @@
                     No
                 @endif
             </li>
+            @endif
             <li>
                 Cancellato:
                 @if ($train->delete == 1)
